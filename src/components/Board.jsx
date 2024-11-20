@@ -139,16 +139,36 @@ export default function Board() {
                     style={{
                         padding: "10px 20px",
                         backgroundColor: "white",
-                        color: "#888",
+                        color: "black",
                         border: "1px solid #ddd",
                         borderRadius: "5px",
                         cursor: "pointer",
                         fontSize: "16px",
                         fontWeight: "bold",
+                        display: "flex", // Use flexbox for layout
+                        alignItems: "center", // Center content vertically
+                        justifyContent: "space-between", // Space out content
+                        gap: "10px", // Add spacing between text and icons
                     }}
                 >
+                    {/* Left Icon */}
+                    <img
+                        src="/Display.svg"
+                        alt="Left Icon"
+                        style={{ width: "20px", height: "20px" }}
+                    />
+
+                    {/* Button Text */}
                     Display
+
+                    {/* Right Icon */}
+                    <img
+                        src="/down.svg"
+                        alt="Right Icon"
+                        style={{ width: "20px", height: "20px" }}
+                    />
                 </button>
+
 
                 {/* Dropdown Component */}
                 <DropdownComponent
@@ -163,7 +183,7 @@ export default function Board() {
             {/* Main Content Section */}
             <div
                     style={{
-                        backgroundColor: "lightblue",
+                        backgroundColor: "#F0F1F5",
                         paddingLeft: "50px",
                         height: "100vh", // Full viewport height
                         display: "flex",
