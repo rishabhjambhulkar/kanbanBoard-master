@@ -178,7 +178,7 @@ export default function Card({ task, index, groupByStatus, onToggleCompleted }) 
 
                     <FeatureRequestContainer>
     <Avatar
-        size="smaller"
+       size={20} 
         src={`https://joesch.moe/api/v1/random?key=feature-${task.id}`}
     />
     <FeatureText>Feature Request</FeatureText>
